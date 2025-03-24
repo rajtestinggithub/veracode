@@ -84,7 +84,7 @@ jobs:
           bundle install
           cd ..
         fi
-        veracode package --source source-code --output veracode-artifacts --trust --debug
+        veracode package --source source-code --output veracode-artifacts --trust
 
     - name: Package error
       if: failure() && steps.application_package.outcome == 'failure'
