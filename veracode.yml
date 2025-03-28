@@ -94,8 +94,9 @@ veracode_iac_secrets_scan:
     trigger: false
     commands:
       - "Veracode IAC Scan"
+    
 
-      
-veracode_static_scan:
+actions:
+  veracode_static_scan:
    build:
     predependency_command: apt install -y msbuild
