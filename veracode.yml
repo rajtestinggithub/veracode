@@ -100,5 +100,5 @@ actions:
   veracode_static_scan:
    build:
     predependency_command: |
-      apt-get install -y dotnet-runtime-8.0
+      apt-get install -y dotnet-runtime-8.0 --fix-missing
       dotnet --info
