@@ -97,4 +97,4 @@ jobs:
 
           recursive: true
 
-          path: ${GITHUB_WORKSPACE}
+
