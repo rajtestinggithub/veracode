@@ -85,7 +85,7 @@ jobs:
           JAVA_OPTS: -Xms2g -Xmx4g
         uses: veracode/veracode-sca@v2.1.12
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.TOKEN }}
           create-issues: true
           recursive: true
           allow-dirty: true
