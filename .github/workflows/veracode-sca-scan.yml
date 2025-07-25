@@ -9,7 +9,11 @@ concurrency:
 on:
   repository_dispatch:
     types: [veracode-sca-scan]
-
+    
+permissions:
+  issues: write
+  pull-requests: write
+  
 jobs:
   register:
     uses: ./.github/workflows/veracode-check-run.yml
